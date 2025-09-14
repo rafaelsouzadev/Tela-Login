@@ -4,16 +4,33 @@
     <meta charset="UTF-8">
     <title>Login</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 </head>
 <body>
     <div class="login-container" id="loginContainer">
         <h2>Bem-vindo</h2>
         <p class="subtitulo">Entre na sua conta</p>
         <input type="text" id="usuario" placeholder="Usuário">
-        <input type="password" id="senha" placeholder="Senha">
-        <button class="btn" type="submit" id="btnLogin">Entrar</button>
+<input type="password" id="senha" placeholder="Senha">
+
+<a href="#" id="esqueci-senha">Esqueci minha senha</a>
+
+<button class="btn" type="button" id="btnLogin">Entrar</button>
+<p id="mensagem"></p> <!-- mensagem de erro ou sucesso -->
+
+<div class="login-social">
+  <button class="btn-facebook">
+    <i class="fab fa-facebook-f"></i> Facebook
+  </button>
+  <button class="btn-google">
+    <i class="fab fa-google"></i> Google
+  </button>
+</div>
+
         
     </div>
+
+    <script src="script.js"></script>
 
 </body>
 </html>
